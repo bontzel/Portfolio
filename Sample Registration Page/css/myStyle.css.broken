@@ -1,0 +1,139 @@
+/*inputurile, la 100% width,inline-block, imi ies (~1px) prin padding-ul de la containerul lor, in timp ce mai multe elemente inline-block nu trec de padding.. nu vad de ce */ 
+
+
+body {
+	background-color: #F1F1F1;
+}
+.container {
+	width: 400px;
+	margin: 0 auto;
+}
+
+
+.main {
+	text-align: center;
+	font-family: 'Open Sans', arial;
+	color: #555;
+	font-size: 20px;
+	font-weight: 300;
+	margin-top: 27px;
+}
+
+header {
+	border-bottom: 1px solid lightgrey;
+	background-color: #F1F1F1;
+	overflow: hidden;
+}
+
+header > * {
+	padding: 2px;
+	display: inline-block;
+}
+
+header button {
+	float: right;
+	margin-top: 10px;
+	margin-right: 25px;
+	margin-bottom: 10px;
+	padding: 8px;
+	font-size: 15px;
+}
+
+.sidebar {
+	display: none;
+}
+
+.registration {
+	margin: 0 auto;
+	background-color: #F1F1F1;
+	width: 100%;
+	padding: 25px;
+}
+
+.registration label {
+	margin-top: 15px;
+	margin-bottom: 0;
+	font-family: cursive;
+	font-size: 13px;
+	display: block;
+	-webkit-user-select: none; 
+	-moz-user-select: none;    
+	-ms-user-select: none;     
+}
+
+.registration > a {
+	display: block;
+}
+
+.username .last {
+	float: right;
+}
+
+.bday {
+	position: relative;
+	margin-bottom: 30px;
+}
+
+.bday * {
+	position: absolute;
+}
+
+.bday .year {
+	right: -5px;
+	width: 100px;
+}
+
+.bday .day {
+	right: 111px;
+	width: 60px;
+}
+
+.bday .month {
+
+}
+
+.gender, .field {
+	width: 100%;
+	margin: 0 auto;
+}
+
+.registration  a {
+	text-decoration: none;
+	font-family: arial;
+	font-size: 14px;
+	color: #15c
+}
+
+
+@media screen and (min-width: 800px) {
+	
+	.sidebar {
+		display: block;
+	}
+
+	body {
+		background-color: #FFFFFF;
+	}
+	.container {
+		width: 900px;
+	}
+	.registration {
+		display: inline-block;
+		width: 400px;
+	}
+
+	.sidebar {
+		display: inline-block;
+		width: 440px;
+	}
+
+	.main {
+		font-size: 38px;
+		font-weight: 300;
+		margin-top: 27px;
+	}
+
+	.first, .last {
+		width: 48%;
+	}
+}

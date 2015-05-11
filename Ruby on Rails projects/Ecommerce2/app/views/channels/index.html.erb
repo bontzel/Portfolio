@@ -1,0 +1,34 @@
+<h1>Index</h1>
+
+<ul>
+    <% @channels.each do |channel| %>
+      <li>
+        <%= link_to channel.name,"/channels?channel_id=" + channel.id.to_s %>
+        </li>
+    <% end %>
+</ul>
+
+<%= form_tag("/channels", method: "get") do %>
+    <%= label_tag(:q, "Search for:") %>
+    <%= text_field_tag(:q) %>
+    <%= submit_tag("Filter") %>
+<% end %>
+
+<ul>
+    <% @products.each do |product| %>
+        <li>
+        <%= product.name %>
+        </li>
+        <li>
+        <label> Price: </label> <%= product.price %>
+        </li>
+        <li>
+        <label> Quantity: </label>  <%= product.quantity %>
+        <li>
+        <%=  button_to("Buy", "/channels/buyAction?product_id=" + product.id.to_s) %>
+        </br>
+    <% end %>
+</ul>
+
+<br>
+

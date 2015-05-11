@@ -1,0 +1,97 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title> Start Game! </title>
+		<script src="http://cdn.jquerytools.org/1.2.7/full/jquery.tools.min.js"></script>
+		<script type="text/javascript" src="library.js"></script>
+		<link rel="stylesheet" type="text/css" href="mystile.css">
+	</head>
+	<body style="background-color: black;" onload="openWin()">
+		<canvas id="canvas" width="600" height="500"></canvas>
+		<p id = "score">Score: 0 </p>
+	</body>
+	<script>
+		var ballr = 10;
+		var rowcolors = ["#FF1C0A", "#FFFD0A", "#00A308", "#0008DB", "#EB0093"];
+		var paddlecolor = "#FFFFFF";
+		var ballcolor = "#FFFFFF";
+		var backcolor = "#000000";
+		var scoreBoard;
+
+
+		function openWin() {
+			window.open("startMenu.html", "gameover", "width = 400, height = 250, left = 450px , top = 200px")
+		}
+
+		function draw() {
+			ctx.fillStyle = backcolor;
+			clear();
+			ctx.fillStyle = ballcolor;
+			circle(x, y, ballr);
+			
+			scoreBoard= document.getElementById("score").innerHTML = "Score: " + score;
+
+			if (rightDown)
+				paddlex += 5;
+			else if (leftDown)
+				paddlex -= 5;
+				
+				
+			ctx.fillStyle = paddlecolor;
+			rect(paddlex, HEIGHT - paddleh, paddlew, paddleh);
+
+			var g = drawbricks();
+			
+			if(g == 0) {
+				gameWin();
+			}
+
+			rowheight = BRICKHEIGHT + PADDING;
+			colwidth = BRICKWIDTH + PADDING;
+			row = Math.floor(y / rowheight);
+			col = Math.floor(x / colwidth);
+
+			if (y < NROWS * rowheight && row >= 0 && col >= 0 && bricks[row][col] == 1) {
+				dy = -dy;
+				bricks[row][col] = 0;
+				score += 4;
+			}
+
+			if (x + dx + ballr > WIDTH || x + dx - ballr < 0)
+				dx = -dx;
+
+			if (y + dy - ballr < 0)
+				dy = -dy;
+			else if (y + dy + ballr > HEIGHT - paddleh) {
+				if (x > paddlex && x < paddlex + paddlew) {
+					dx = 8 * ((x - (paddlex + paddlew / 2)) / paddlew);
+					dy = -dy;
+				} else if (y + dy + ballr > HEIGHT) {
+					clearInterval(intervalId);
+					window.open("gameOver.html", "gameover", "width = 400, height = 250, left = 400px , top = 400px")
+				}
+			}
+
+			x += dx;
+			y += dy;
+		}
+
+		function restart() {
+			initbricks();
+			intervalId = setInterval(draw, 10);
+			x = 25;
+			y = 250;
+		}
+		
+		function gameWin() {
+			clearInterval(intervalId);
+			window.open("gameWin.html", "gamewin", "width = 400, height = 250, left = 400px , top = 400px")
+		}
+		
+		function getScore() {
+			return score;
+		}
+
+	</script>
+
+</html>

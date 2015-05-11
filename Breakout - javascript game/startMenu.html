@@ -1,0 +1,21 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title> Start Menu </title>
+		<link rel="stylesheet" type="text/css" src="mystile.css">
+	</head>
+	<body>
+		<button onclick="startGame()">
+			Start Game!
+		</button>
+	</body>
+	<script>
+		function startGame() {
+			window.opener.init()
+			window.opener.initbricks();
+	
+			window.close();
+		}
+	</script>
+</html>

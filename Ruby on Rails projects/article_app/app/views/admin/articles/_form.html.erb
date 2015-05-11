@@ -1,0 +1,15 @@
+<%= form_for :article, url: admin_articles_path do |f| %>
+  <%= f.label :title %>
+  <%= f.text_field :title %>
+
+  <br>
+  <br>
+  <%= f.label "Content" %>
+  <%= f.text_area :content  %>
+
+  <br />
+  <br />
+
+
+  <%= f.submit "Create" %>
+<% end %>

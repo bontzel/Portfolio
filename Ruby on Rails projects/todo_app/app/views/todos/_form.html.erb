@@ -1,0 +1,15 @@
+<%= form_for @todo do |f| %>
+  <%= f.label :title %>
+  <%= f.text_field :title %>
+
+  <br>
+  <br>
+  <%= f.label "Description" %>
+  <%= f.text_area :description  %>
+
+  <br />
+  <br />
+
+
+  <%= f.submit "Create" %>
+<% end %>

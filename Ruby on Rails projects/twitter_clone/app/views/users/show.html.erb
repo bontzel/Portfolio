@@ -1,0 +1,16 @@
+<% if(current_user.id == params[:id].to_i) %>
+	<%= form_tag("/users/" + current_user.id.to_s, method: "get") do %>
+	   <%= label_tag(:q, "Search for:") %>
+	   <%= text_field_tag(:q) %>
+	   <%= submit_tag("Filter") %>
+	<% end %>
+
+	<% @tweets.each do |tweet| %>
+		<label><%= User.find(tweet.user_id).name%></label>
+		<p><%= tweet.text %></p>
+	<%end%>
+	<%= render "form" %>
+<%else%>
+	<%= button_to "Follow", url: "/users#followUser", method: :post %>
+<%end%>
+	<%= link_to "Sign out!", destroy_user_session_path %>

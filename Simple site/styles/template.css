@@ -1,0 +1,170 @@
+
+@import url('reset.css');
+@import url('../js/uniform/css/uniform.default.css');
+
+body {
+    background: #009999;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+
+#wrap {
+    margin: 0 auto;
+    width: 960px;
+}
+
+
+.clearfix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+.clearfix {
+    display: inline-block;
+}
+/* Hides from IE-mac \*/
+* html .clearfix { height: 1%;}
+.clearfix {display: block;}
+/* End hide from IE-mac */
+
+
+#main {
+    background: #edecea;
+}
+
+#article {
+    float: left;
+    width: 728px;
+    margin-top: 8px;
+    margin-right: 25px;
+    padding: 0 0 20px;
+}
+
+#footer a,
+#footer a:link,
+#footer a:active,
+#footer a:visited,
+#footer a:hover {
+    color: #AA0000;
+}
+
+#footer a:hover {
+    color: #CC0000;
+}
+
+#aside {
+    float: left;
+    position: relative;
+    width: 168px;
+    margin: 8px 24px 10px 15px;
+    font-size: 12px;
+}
+
+#aside ul {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+}
+
+
+
+#aside ul.main {
+    background-color: #E6E3E4;
+}
+
+#aside ul.genre {
+    background-color: #298A4A;
+}
+
+#aside ul.list2 {
+	background-color: #6EA681;
+}
+
+#aside ul.guitars {
+	background-color: #00A352;
+}
+
+#aside li {
+    line-height: 1.6em;
+    display: block;
+}
+
+#aside a {
+    text-decoration: none;
+    color: #000000;
+    display: block;
+    padding-left: 10px;
+}
+
+#aside a:hover {
+    background-color: #C5E5FF;
+}
+
+#footer {
+    padding: 0 0 0 195px;
+    position: relative;
+    clear: both;
+    font-size: 12px;
+    background: #006600 url('../materiale/footer-bg-2.png') no-repeat 0 50%;
+    color: #DDDDDD;
+}
+
+#footer td {
+    padding: 16px;
+    line-height: 1.4em;
+}
+
+#footer ul {
+    list-style: none;
+    margin: 0 0 1em;
+    padding: 0;
+}
+
+#footer li {
+    margin: 0;
+    padding: 0;
+}
+
+#footer a,
+#footer a:link,
+#footer a:active,
+#footer a:visited,
+#footer a:hover {
+    color: #DDDDDD;
+    text-decoration: none;
+}
+
+#footer a:hover {
+    color: #CCCCCC;
+    text-decoration: underline;
+}
+
+#header td {
+	background:URL('../materiale/head_cover.png');
+	background-size:cover;
+	color: white;
+	width: 192px;
+	text-align: center;
+	padding: 7px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+#header {
+ margin-bottom: 5px;
+ margin-top: 5px;
+}
+
+#header td:hover {
+	background:URL('../materiale/head_cover_2.png');
+	background-size:cover;
+}
+
+#header a:link,
+#header a:visited {
+	text-decoration: none;
+	color:white;
+}
+}
+

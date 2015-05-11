@@ -1,0 +1,6 @@
+<% @user.tweets.each do |tweet| %>
+	<label><%= @user.name%></label>
+	<p><%= tweet.text %></p>
+<%end%>
+
+<%= render "form" %>

@@ -1,0 +1,32 @@
+<h2>Articles Listing</h2>
+
+<%= link_to "New Article", new_admin_article_path(@articles) %>
+<br />
+
+<table>
+	<caption> Articles Listing</caption>
+	<thead>
+		<tr>
+			<th> Title </th>
+			<th colspan = "2"> Options </th>
+			<th> Number of views </th>
+		</tr>
+	</thead>
+	<tbody>
+	<% @articles.each do |article| %>
+		<tr>
+			<td><%= article.title %> </td>
+		
+			<td> <%= link_to 'Edit', edit_admin_article_path(article) %> </td>
+		
+			<td> <%= link_to 'Delete', admin_article_path(article),
+              method: :delete,
+              data: { confirm: 'Are you sure?' } %> </td>
+
+             <td> <%= article.number_of_views %> </td>
+		</tr>
+	<% end %>
+	</tbody>
+</table>
+
+<%= link_to "User Panel", "/articles" %>

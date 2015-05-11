@@ -1,0 +1,295 @@
+
+header {
+	background-color: #473E3F;
+	text-align: center;
+}
+
+h1 {
+	margin: 0;
+	color: white;
+	font-family: 'Lato', sans-serif;
+}
+
+.centering_container {
+	text-align: center;
+	white-space: nowrap;
+}
+
+.centering_container:before {
+	content: '';
+	display: inline-block;
+	height: 100%;
+	vertical-align: middle;
+	margin-right: -0.25em;
+}
+
+.main_container {
+	text-align: center;
+	display: inline-block;
+	margin-top: 20px;
+	width: 600px;
+}
+
+.question_box {
+	display: inline-block;
+	width: 600px;
+}
+
+
+.question_list {
+	width: 100%;
+	text-align: left;
+	list-style: none;
+	padding: 0;
+	display: inline-block;
+}
+
+.question_list li {
+	border-bottom: 1px solid #8EDC9D;
+	margin-top: 5px;
+	padding-bottom: 2px;
+	width: 100%;
+}
+
+.question_list li a {
+	width: 100%;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 20px;
+	text-decoration: none;
+	color: #473E3F;
+}
+
+.Pagination {
+	position: absolute;
+}
+
+
+.Pagination-prev, .Pagination-next, .back_button {
+	text-decoration: none;
+	-webkit-box-shadow: inset 4px -7px 0 -5px rgba(121, 127, 117, 0.75);
+	-moz-box-shadow: inset 4px -7px 0 -5px rgba(121, 127, 117, 0.75);
+	box-shadow: inset 0 -7px 0 -5px rgba(121, 127, 117, 0.75);
+
+	border: 1px solid lightgrey;
+	border-radius: 5px;
+	padding: 4px;
+
+	color: #473E3F;
+
+	background: #fcfff4; /* Old browsers */
+	background: -moz-linear-gradient(top,  #fcfff4 0%, #dfe5d7 40%, #b3bead 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fcfff4), color-stop(40%,#dfe5d7), color-stop(100%,#b3bead)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #fcfff4 0%,#dfe5d7 40%,#b3bead 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #fcfff4 0%,#dfe5d7 40%,#b3bead 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #fcfff4 0%,#dfe5d7 40%,#b3bead 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #fcfff4 0%,#dfe5d7 40%,#b3bead 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcfff4', endColorstr='#b3bead',GradientType=0 ); /* IE6-9 */
+}
+
+.Pagination-prev {
+	margin-right: 5px;
+}
+
+.Pagination-prev:active, .Pagination-next:active, .back_button:active {
+
+	border: none;
+	background-color: #8EDC9D;
+}
+
+.Pagination-prev:hover, .Pagination-next:hover, .back_button:hover {
+	background: #fcfff4;
+	box-shadow: inset 0 -7px 0 -5px rgb(195, 204, 179);
+}
+
+.Question {
+	margin: 0 auto;
+}
+
+.centeringContainer {
+	text-align: center;
+	/* May want to do this if there is risk the container may be narrower than the element inside */
+	white-space: nowrap;
+}
+
+.centeringContainer:before {
+	content: '';
+	display: inline-block;
+	height: 100%;
+	vertical-align: middle;
+	margin-right: -0.25em; /* Adjusts for spacing */
+}
+
+.Question {
+	display: inline-block;
+	vertical-align: middle;
+	width: 90%;
+	border-bottom: 1px solid #8EDC9D;
+}
+
+.answers_list {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	margin-top: 15px;
+}
+.answers_list li {
+	margin: 0 auto;
+	width: 80%;
+	margin-top: 10px;
+	border-bottom: 1px solid lightgrey;
+}
+
+.answers_list li label {
+	font-family: 'Lora', serif;
+	color: #473E3F;
+	padding: 0;
+	float: left;
+}
+
+.answers_list li p {
+	margin: 0;
+	padding: 0;
+	clear: left;
+	text-align: left;
+	padding-top: 4px;
+	margin-left: 5px;
+}
+
+.answer_form input {
+	margin-top: 20px;
+
+}
+
+.answer_form textarea {
+	display: block;
+	margin: 0 auto;
+	margin-top: 10px;
+	width: 70%;
+	height: 150px;
+}
+
+.submit_button {
+	background-color: white;
+	border: 1px solid lightgrey;
+	padding: 3px 10px 3px 10px;
+	margin-left: 125px;
+}
+
+.back_button {
+	display: block;
+	margin: 0 auto;
+	width: 80px;
+	margin-top: 10px;
+}
+
+.tags_box {
+	width: 100%;
+}
+
+.tags_list {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.tags_list li {
+	display: inline-block;
+	font-size: 11px;
+	margin: 5px;
+	color:#EF7126;
+	padding: 4px;
+	border-radius: 5px;
+	font-family: 'Open Sans', sans-serif;
+	cursor: cell;
+}
+
+.active_tags {
+	-webkit-box-shadow: -3px 3px 0 0 rgba(0,0,0,0.75);
+	-moz-box-shadow: -3px 3px 0 0 rgba(0,0,0,0.75);
+	box-shadow: -3px 3px 0 0 rgba(0,0,0,0.75);
+	background-color: #8EDC9D;
+}
+
+.ask_button {
+	text-decoration: none;
+	display: block;
+	margin: 0 auto;
+	width: 200px;
+
+	padding: 5px;
+
+	color: white;
+
+	-webkit-box-shadow: inset 4px -7px 0 -5px rgba(45, 90, 127, 0.75);
+	-moz-box-shadow: inset 4px -7px 0 -5px rgba(45, 90, 127, 0.75);
+	box-shadow: inset 0 -7px 0 -5px rgba(45, 90, 127, 0.75);
+
+	border-radius: 5px;
+
+	border: 1px solid #2d5a7f;
+
+	background: #94c6ec; /* Old browsers */
+	background: -moz-linear-gradient(top,  #94c6ec 0%, #4f9cdf 55%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#94c6ec), color-stop(55%,#4f9cdf)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #94c6ec 0%,#4f9cdf 55%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #94c6ec 0%,#4f9cdf 55%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #94c6ec 0%,#4f9cdf 55%); /* IE10+ */
+	background: linear-gradient(to bottom,  #94c6ec 0%,#4f9cdf 55%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#94c6ec', endColorstr='#4f9cdf',GradientType=0 ); /* IE6-9 */
+
+	-webkit-transition: all .8s ease;
+	   -moz-transition: all .8s ease;
+	    -ms-transition: all .8s ease;
+	     -o-transition: all .8s ease;
+	        transition: all .8s ease;
+
+
+}
+
+.ask_button:hover {
+	-webkit-box-shadow: inset 4px -7px 0 -5px rgb(95, 153, 204);
+	-moz-box-shadow: inset 4px -7px 0 -5px rgb(95, 153, 204);
+	box-shadow: inset 0 -7px 0 -5px rgba(95, 153, 204, 0.75);
+
+	border: 1px solid #5f99cc;
+
+	color: black;
+
+	background: #c5e0f5; /* Old browsers */
+	background: -moz-linear-gradient(top,  #c5e0f5 0%, #a0caee 55%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#c5e0f5), color-stop(55%,#a0caee)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #c5e0f5 0%,#a0caee 55%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #c5e0f5 0%,#a0caee 55%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #c5e0f5 0%,#a0caee 55%); /* IE10+ */
+	background: linear-gradient(to bottom,  #c5e0f5 0%,#a0caee 55%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c5e0f5', endColorstr='#a0caee',GradientType=0 ); /* IE6-9 */
+
+}
+
+.ask_button:active {
+	opacity: 0;
+
+	color:white;
+
+	background: #7ebae8; /* Old browsers */
+	background: -moz-linear-gradient(top,  #7ebae8 0%, #2b88d9 55%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#7ebae8), color-stop(55%,#2b88d9)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #7ebae8 0%,#2b88d9 55%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #7ebae8 0%,#2b88d9 55%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #7ebae8 0%,#2b88d9 55%); /* IE10+ */
+	background: linear-gradient(to bottom,  #7ebae8 0%,#2b88d9 55%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7ebae8', endColorstr='#2b88d9',GradientType=0 ); /* IE6-9 */
+
+}
+
+.ask_form {
+	width: 600px;
+}
+
+.input_container {
+	margin-bottom: 25px;
+}
+
+.input_container > input, .input_container > textarea {
+	width: 300px;
+}

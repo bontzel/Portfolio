@@ -1,0 +1,192 @@
+/**
+ * Content stylesheet
+ * Put all page/article related styles here, separate from the template
+ */
+
+.hidden {display: none;}
+
+#article {
+    line-height: 1.5em;
+    text-align: justify;
+    font-size: 12px;
+	background-color:#edecea;
+}
+
+#article a,
+#article a:link,
+#article a:active {
+    text-decoration: none;
+    font-weight: bold;
+    color: #AA0000;
+}
+
+#article a:visited {
+    color: #770000;
+}
+
+#article a:hover {
+    color: #CC0000;
+}
+
+#article b,
+#article strong {
+    font-weight: bold;
+}
+
+#article i,
+#article em {
+    font-style: italic;
+}
+
+#article h1,
+#article h2,
+#article h3,
+#article h4,
+#article h5,
+#article h6 {
+    clear: both;
+    font-weight: bold;
+    margin: 0 0 1em;
+}
+
+#article h1 {
+    font-size: 16px;
+}
+
+#article h2 {
+    font-size: 14px;
+    background: #009933;
+}
+
+#article h3 {
+    font-size: 12px;
+    background: #CCD7E3;
+}
+
+#article h4 {
+    font-size: 12px;
+}
+
+#article p {
+    clear: both;
+    margin: 0 0 1em;
+}
+
+#article table, table td, table th {
+	border: none;
+}
+
+#article table.full {
+    clear: both;
+    width: 100%;
+    margin: 0 0 1em;
+}
+
+#article table.full td,
+#article table.full th {
+    padding: 5px;
+    vertical-align: top;
+}
+
+#article table.full th {
+    background: #CCD7E3;
+    font-weight: bold;
+}
+
+#article table.title {
+    background: #33AD5C;
+    clear: both;
+    width: 100%;
+    margin: 0 0 1em;
+}
+
+#article table.title td,
+#article table.title th {
+    padding: 5px;
+    vertical-align: top;
+}
+
+#article table.title td.image {
+    padding: 8px;
+}
+
+#article table.title td.text {
+    padding: 8px 15px 6px 0;
+}
+
+#article table.title tr:nth-child(1) td.text {
+    height: 40px;
+}
+
+#article table.title tr:nth-child(2) td.text {
+    padding-top: 0;
+    height: 110px;
+}
+
+#article table.title img {
+    float: left;
+    width: 150px;
+    height: 150px;
+}
+
+#article table.title h1 {
+    margin: 0 0 4px;
+    font-size: 14px;
+}
+
+#article table.title h5 {
+    margin: 0;
+    font-size: 13px;
+}
+
+#article table.title p {
+    margin: 0;
+}
+
+#article table.withborders td,
+#article table.withborders th {
+	border-width: 1px;
+	border-style:solid;
+	border-color:#CCCCCC;
+	}
+
+
+#article ul,
+#article ol {
+    margin: 0 0 1em 20px;
+}
+
+#article ul {
+    list-style: circle;
+}
+
+#article ol {
+    list-style: decimal;
+}
+
+#article .tab {
+    clear: both;
+    display: inline-block;
+    background: #FFFFFF;
+    border: 1px solid #000000;
+    padding: 10px;
+    font-family: 'Courier New', 'Courier', monospace;
+    font-size: 14px;
+    margin: 0 0 1em;
+}
+
+#article .help {
+    clear: both;
+    height: 130px;
+    padding: 0 0 0 140px;
+    margin: 0 0 1em;
+    background: transparent url('../images/help.png') no-repeat 0 0;
+}
+
+#article .youtube {
+    clear: both;
+    position: relative;
+    margin: 0 auto 1em;
+    background: #AAAAAA;
+}
+

@@ -1,0 +1,24 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title> Start Menu </title>
+		<link rel="stylesheet" type="text/css" src="mystile.css">
+	</head>
+	<body onload = showScore()>
+		<button onclick="restart()">
+			Replay?
+		</button>
+		<p id = "score" style="float: right; font-size: 30px"> Score</p>
+	</body>
+	<script>
+		function showScore() {
+			var score = document.getElementById("score").innerHTML = "Score: " + window.opener.getScore();
+		}
+	
+		function restart() {
+			window.opener.restart();
+			window.close();
+		}
+	</script>
+</html>

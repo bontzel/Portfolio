@@ -1,0 +1,22 @@
+<h2>My TODOs</h2>
+
+<%= link_to "New Todo", "/todos/new" %>
+<br />
+
+<ul>
+	<% @todos.each do |todo| %>
+	<li>
+		<%= todo.title %>
+		<%= link_to "Show", todo  %> 
+	</li>
+	<% end %>
+</ul>
+
+<%= link_to "Last 3 todos", "/todos/previous" %>
+<br/>
+
+<%= form_tag("/todos", method: "DELETE") do %>
+<%= text_field_tag(:q) %>
+<%= submit_tag("Delete") %>
+<% end %>
+

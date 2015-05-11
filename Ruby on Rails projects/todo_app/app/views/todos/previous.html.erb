@@ -1,0 +1,9 @@
+<h2> Last 3 todos </h2>
+
+<ul>
+	<% @todos.each do |todo| %>
+	<li>
+		<%= todo.title %>
+	</li>
+	<% end %>
+</ul>

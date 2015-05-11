@@ -1,0 +1,20 @@
+<h2>Articles Listing</h2>
+
+<%= link_to "Admin Panel", "/admin/articles" %>
+<br/>
+<br/>
+
+<%= form_tag("/articles", method: "get") do %>
+  <%= label_tag(:q, "Search for:") %>
+  <%= text_field_tag(:q) %>
+  <%= submit_tag("Filter") %>
+<% end %>
+
+<ul>
+	<% @articles.each do |article| %>
+	<li>
+		<%= article.title %>
+		<%= link_to "Show", article  %> 
+	</li>
+	<% end %>
+</ul>

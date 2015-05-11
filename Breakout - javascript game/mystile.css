@@ -1,0 +1,14 @@
+#canvas {
+	border: 1px solid black;
+	position: absolute;
+	left: 380px;
+	right: 500px;
+}
+
+#score {
+	position: absolute;
+	right: 250px;
+	font-family: consolas;
+	font-size: 25px;
+}
+

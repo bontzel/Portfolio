@@ -1,0 +1,17 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta charset ="UTF-8">
+		<title> you Won! </title>
+	</head>
+	<body style="background-color: gray;" onload = showScore()>
+		<p style ="font-size: 20px; margin: 0 auto; position: absolute; left: 150px; top: 150px;"> You Won! </p> 
+		<p id = "score" style="float: bottom; font-size: 30px"> Score</p>
+	</body>
+	<script>
+		function showScore() {
+			var score = document.getElementById("score").innerHTML = "Score: " + window.opener.getScore();
+		}
+	
+	</script>
+</html>
