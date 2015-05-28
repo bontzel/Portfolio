@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="80px" height="80px" viewBox="0 0 80 80" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.2.2 (9983) - http://www.bohemiancoding.com/sketch -->
+    <title>F_icon</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Web-App-Phone---I-WANT-MORE-Clean" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="IWM/02.-Login" sketch:type="MSArtboardGroup" transform="translate(-46.000000, -228.000000)">
+            <g id="F_icon" sketch:type="MSLayerGroup" transform="translate(46.000000, 228.000000)">
+                <path d="M75.3921236,79.7859459 C77.8180695,79.7859459 79.7853282,77.8186873 79.7853282,75.3921236 L79.7853282,4.57513514 C79.7853282,2.14826255 77.8183784,0.181621622 75.3921236,0.181621622 L4.57513514,0.181621622 C2.14826255,0.181621622 0.181621622,2.14826255 0.181621622,4.57513514 L0.181621622,75.3921236 C0.181621622,77.8183784 2.14795367,79.7859459 4.57513514,79.7859459 L75.3921236,79.7859459 L75.3921236,79.7859459 Z" id="Blue_1_" fill="#3C5A99" sketch:type="MSShapeGroup"></path>
+                <path d="M55.107027,79.7859459 L55.107027,48.9587645 L65.4542085,48.9587645 L67.0035521,36.9448649 L55.107027,36.9448649 L55.107027,29.274749 C55.107027,25.7964479 56.0728958,23.4261004 61.060695,23.4261004 L67.4223938,23.4233205 L67.4223938,12.6779923 C66.3221622,12.531583 62.5457915,12.2044788 58.152278,12.2044788 C48.9800772,12.2044788 42.7005405,17.8032432 42.7005405,28.0849421 L42.7005405,36.9448649 L32.3267954,36.9448649 L32.3267954,48.9587645 L42.7005405,48.9587645 L42.7005405,79.7859459 L55.107027,79.7859459 L55.107027,79.7859459 Z" id="f" fill="#FFFFFF" sketch:type="MSShapeGroup"></path>
+            </g>
+        </g>
+    </g>
+</svg>

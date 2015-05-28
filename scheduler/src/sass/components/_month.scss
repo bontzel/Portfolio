@@ -1,0 +1,59 @@
+table {
+  width: 100%;
+  border-spacing: 0;
+  font-size: 20px;
+  font-family: 'Raleway', sans-serif;
+}
+
+th,td {
+  border: 1px solid lightgrey;
+}
+
+td {
+  font-size: 40px;
+  height: 125px;
+  text-align: center;
+  vertical-align: middle;
+
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+
+  cursor: default;
+}
+
+td:hover {
+  -webkit-box-shadow: inset 1px 1px 14px 4px rgb(75, 161, 242);
+  -moz-box-shadow: inset 1px 1px 14px 4px rgb(75, 161, 242);
+  box-shadow: inset 1px 1px 14px 4px rgb(75, 161, 242);
+}
+
+td:active {
+  background-color: #009dd6;
+
+}
+
+.day {
+  color: black;
+}
+
+.day-outer-month {
+  color: lightgrey;
+}
+
+.day .day-outer-month {
+  color:black;
+}
+
+.next-month, .prev-month {
+  text-decoration: none;
+  font-size: 40px;
+  color: black;
+}
+
+.is-today {
+  color: red;
+}

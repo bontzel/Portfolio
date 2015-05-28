@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="80px" height="80px" viewBox="0 0 80 80" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.2.2 (9983) - http://www.bohemiancoding.com/sketch -->
+    <title>linkedin-icon</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Web-App-Phone---I-WANT-MORE-Clean" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="IWM/02.-Login" sketch:type="MSArtboardGroup" transform="translate(-53.000000, -579.000000)">
+            <g id="Logins" sketch:type="MSLayerGroup" transform="translate(30.000000, 228.000000)">
+                <g id="Login-with-LInkedin" transform="translate(0.000000, 351.000000)" sketch:type="MSShapeGroup">
+                    <g id="linkedin-icon" transform="translate(23.000000, 0.000000)">
+                        <rect id="Rectangle-path" fill="#017BB6" x="0" y="0" width="79.68902" height="80"></rect>
+                        <path d="M13.6350924,30.8834839 L24.8784047,30.8834839 L24.8784047,67.1450806 L13.6350924,67.1450806 L13.6350924,30.8834839 L13.6350924,30.8834839 Z M19.2608524,12.8570557 C22.8555144,12.8570557 25.7706104,15.7873535 25.7706104,19.3904114 C25.7706104,22.9969788 22.8555144,25.9266663 19.2608524,25.9266663 C15.6528149,25.9266663 12.7448626,22.9969788 12.7448626,19.3904114 C12.7448626,15.7873535 15.6528149,12.8570557 19.2608524,12.8570557 L19.2608524,12.8570557 Z" id="Shape" fill="#FFFFFF"></path>
+                        <path d="M31.927286,30.8834839 L42.6945525,30.8834839 L42.6945525,35.8395386 L42.8474586,35.8395386 C44.3449052,32.9866028 48.0116124,29.9821472 53.4764105,29.9821472 C64.8416221,29.9821472 66.9443093,37.4888611 66.9443093,47.2549438 L66.9443093,67.1450806 L55.7213643,67.1450806 L55.7213643,49.5150757 C55.7213643,45.3060913 55.6386795,39.8960877 49.8829645,39.8960877 C44.036965,39.8960877 43.1459752,44.4766235 43.1459752,49.2037964 L43.1459752,67.1450806 L31.927286,67.1450806 L31.927286,30.8834839 L31.927286,30.8834839 Z" id="Shape" fill="#FFFFFF"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
